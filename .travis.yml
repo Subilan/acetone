@@ -7,7 +7,7 @@ script:
   - cd docs/.vuepress/dist && echo 'acetone.subilan.win' > CNAME
 deploy:
   provider: pages
-  cleanup: false
+  skip_cleanup: true
   local_dir: docs/.vuepress/dist
   github_token: $GITHUB_TOKEN
   target_branch: deploy
