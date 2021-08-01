@@ -1,0 +1,31 @@
+{
+  "name": "acetone",
+  "version": "1.0.0",
+  "description": "**Acetone** 的初衷是带给你一个*较为清晰*的 Minecraft 插件开发概念和基本途径。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subilan/acetone.git"
+  },
+  "author": "Subilan",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Subilan/acetone/issues"
+  },
+  "homepage": "https://github.com/Subilan/acetone#readme",
+  "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/theme-default": "^1.8.2",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "vuepress": "^1.8.2"
+  }
+}

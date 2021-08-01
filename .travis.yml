@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "10"
+script:
+  - npm install
+  - npm run build
+  - cd docs/.vuepress/dist
+  - echo acetone.subilan.win > CNAME
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  github_token: $GITHUB_TOKEN
+  target_branch: deploy
+  keep_history: false
+  on:
+    branch: master
