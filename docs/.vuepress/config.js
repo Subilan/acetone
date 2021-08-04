@@ -29,7 +29,10 @@ function createSidebarGroup(title, name) {
 
 function getSidebar(name) {
 	let sidebar = {
-		intro: [['/content/1.1', '1.1 插件的概念']]
+		intro: [
+			['/content/1.1', '1.1 插件的概念'],
+			['/content/1.2', '1.2 我们的第一个插件']
+		]
 	};
 	return sidebar[name];
 }
