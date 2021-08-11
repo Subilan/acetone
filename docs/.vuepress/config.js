@@ -6,7 +6,7 @@ module.exports = {
 			{ text: '首页', link: '/' },
 			{ text: '关于', link: '/about' }
 		],
-		sidebar: [createSidebarGroup('入门', 'intro')]
+		sidebar: [createSidebarGroup('入门', 'intro'), createSidebarGroup('进阶', 'advanced')]
 	},
 	lastUpdated: '最后更新于',
 	markdown: {
@@ -32,6 +32,9 @@ function getSidebar(name) {
 		intro: [
 			['/content/1.1', '1.1 插件的概念'],
 			['/content/1.2', '1.2 我们的第一个插件']
+		],
+		advanced: [
+			['/content/2.1', '2.1 配置文件']
 		]
 	};
 	return sidebar[name];
